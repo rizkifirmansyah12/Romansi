@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.compaq.romansi.Login"
+    android:gravity="center">
+
+    <ImageSwitcher
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgroud">
+
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etusername"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:hint="Username" />
+
+            <EditText
+                android:id="@+id/etpassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/etusername"
+                android:layout_marginTop="50dp"
+                android:background="#ffffff"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btlogin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/button2"
+                android:layout_alignLeft="@+id/etpassword"
+                android:layout_alignStart="@+id/etpassword"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/mybuttonlarge"
+
+                android:text="Login" />
+
+            <Button
+                android:id="@+id/btsignup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/etpassword"
+                android:layout_marginTop="73dp"
+                android:background="@drawable/mybuttonlarge"
+                android:onClick="register"
+                android:text="Sign Up" />
+
+        </LinearLayout>
+
+    </ImageSwitcher>
+
+</RelativeLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.compaq.romansi.Signup">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/etNamauser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="User"
+        android:inputType="textPersonName"
+        android:text=""
+        tools:layout_editor_absoluteY="5dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintRight_toRightOf="parent" />
+    <EditText
+        android:id="@+id/etNamadepan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nama Depan"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/etNamabelakang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nama Belakang"
+        android:inputType="textPersonName"
+        android:text=""
+        tools:layout_editor_absoluteY="5dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintRight_toRightOf="parent" />
+    <EditText
+        android:id="@+id/etpasswordsign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:text=""
+        tools:layout_editor_absoluteY="5dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:text=""
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="58dp" />
+
+    <EditText
+        android:id="@+id/etTTL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="YYYY/MM/DD (Tanggal Lahir)"
+        android:inputType="date"
+        android:text=""
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="111dp" />
+
+    <EditText
+        android:id="@+id/etTanggalPernikahan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="YYYY/MM/DD (Tanggal Pernikahan)"
+        android:inputType="date"
+        android:text=""
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="167dp" />
+
+
+    <EditText
+        android:id="@+id/etNomerTelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nomor Telepon"
+        android:inputType="number"
+        android:text=""
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="211dp" />
+
+    <TextView
+        android:id="@+id/tvJenisKelamin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="259dp" />
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Laki-laki"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="30dp"/>
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="Perempuan"
+        android:layout_marginLeft="100dp"/>
+</LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="372dp"
+        android:layout_height="64dp"
+        android:text="Saya mematuhi ketentuan dan syarat yang berlaku."
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="358dp" />
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Register"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="430dp"
+        android:onClick="register"/>
+
+
+</LinearLayout>
+</RelativeLayout>
