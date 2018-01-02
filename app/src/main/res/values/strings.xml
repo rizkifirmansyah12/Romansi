@@ -2,4 +2,5 @@
     <string name="app_name">Romansi</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name="message">Message...</string>
 </resources>

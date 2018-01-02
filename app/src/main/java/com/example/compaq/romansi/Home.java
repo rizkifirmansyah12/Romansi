@@ -70,4 +70,7 @@ public class Home extends AppCompatActivity {
 
     public void dokter(View view) { startActivity(new Intent(Home.this,menu_konsultan.class));
     }
+
+    public void artikel(View view) {startActivity(new Intent(Home.this,menu_artikel.class));
+    }
 }

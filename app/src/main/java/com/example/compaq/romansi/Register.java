@@ -10,7 +10,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -31,7 +30,7 @@ public class Register extends AppCompatActivity {
     Button btnRegister,btnlogin;
     EditText etNamauser, etpasswordreg,etconfirmpass;
 
-    RadioButton radioadmin,radioclient,radioconsul;
+
 Intent intent;
     int success;
     ConnectivityManager conMgr;
@@ -65,9 +64,7 @@ Intent intent;
         etpasswordreg = (EditText) findViewById(R.id.etpasswordreg);
         etconfirmpass = (EditText) findViewById(R.id.etconfirmpass);
 
-        radioadmin = (RadioButton) findViewById(R.id.radioadmin);
-        radioclient = (RadioButton) findViewById(R.id.radioclient);
-        radioconsul = (RadioButton) findViewById(R.id.radioconsul);
+
 
         btnlogin.setOnClickListener(new View.OnClickListener() {
 
@@ -89,21 +86,18 @@ Intent intent;
                                                String username = etNamauser.getText().toString();
                                                String password = etpasswordreg.getText().toString();
                                                String confirm_password = etconfirmpass.getText().toString();
-                                               String admin = radioadmin.getText().toString();
-                                               String client = radioclient.getText().toString();
-                                               String consultan = radioconsul.getText().toString();
 
                                                if (conMgr.getActiveNetworkInfo() != null
                                                        && conMgr.getActiveNetworkInfo().isAvailable()
                                                        && conMgr.getActiveNetworkInfo().isConnected()) {
-                                                   checkRegister(username, password, confirm_password, admin, client, consultan);
+                                                   checkRegister(username, password, confirm_password);
                                                } else {
                                                    Toast.makeText(getApplicationContext(), "No Internet Connection", Toast.LENGTH_SHORT).show();
                                                }
                                            }
                                        });
     }
-    private void checkRegister(final String username, final String password, final String confirm_password, final String admin ,final String client, final String consultan) {
+    private void checkRegister(final String username, final String password, final String confirm_password) {
         pDialog = new ProgressDialog(this);
         pDialog.setCancelable(false);
         pDialog.setMessage("Register ...");
@@ -131,9 +125,6 @@ Intent intent;
                         etNamauser.setText("");
                         etpasswordreg.setText("");
                         etconfirmpass.setText("");
-                        radioadmin.setText("admin");
-                        radioclient.setText("client");
-                        radioconsul.setText("konsultan");
 
                     } else {
                         Toast.makeText(getApplicationContext(),
@@ -166,10 +157,7 @@ Intent intent;
                 params.put("username", username);
                 params.put("password", password);
                 params.put("confirm_password", confirm_password);
-                params.put("admin",admin);
-                params.put("client",client);
-                params.put("konsultan",consultan);
-                return params;
+              return params;
             }
 
         };

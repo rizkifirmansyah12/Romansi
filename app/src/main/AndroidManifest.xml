@@ -30,7 +30,11 @@
         <activity android:name=".chatpsiko" />
         <activity android:name=".artikel_psiko" />
         <activity android:name=".profile" />
-        <activity android:name=".Register"></activity>
+        <activity android:name=".Register" />
+        <activity android:name=".chatsekso" />
+        <activity android:name=".chatreal" />
+        <activity android:name=".menu_artikel" />
+        <activity android:name=".topup"></activity>
     </application>
 
 </manifest>

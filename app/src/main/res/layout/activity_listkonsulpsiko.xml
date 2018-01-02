@@ -91,7 +91,8 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:orientation="horizontal"
-            android:gravity="center_horizontal">
+            android:gravity="center_horizontal"
+            android:onClick="psiko1">
 
             <TextView
                 android:id="@+id/textView3"
@@ -106,7 +107,8 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:orientation="horizontal"
-            android:gravity="center_horizontal">
+            android:gravity="center_horizontal"
+            android:onClick="psiko1">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -120,7 +122,8 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:orientation="horizontal"
-            android:gravity="center_horizontal">
+            android:gravity="center_horizontal"
+            android:onClick="psiko1">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -131,8 +134,13 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
+            android:layout_height="match_parent"
+            android:onClick="psiko1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Muhammad Arifin"
+                android:gravity="left|center"/>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

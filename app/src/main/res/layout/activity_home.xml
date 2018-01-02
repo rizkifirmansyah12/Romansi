@@ -17,25 +17,24 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true">
+            android:layout_height="match_parent">
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:gravity="center">
+                android:gravity="center"
+                >
                 <ImageView
                     android:background="#02fde4"
                     android:layout_width="60dp"
-                    android:layout_height="60dp" />
-                <TextView
-                    android:text="ROMANSI"
-                    android:layout_marginTop="20dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="60dp"
+                    android:paddingBottom="100dp"/>
+            <ImageView
+                android:paddingTop="30dp"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:background="@drawable/coollogo"/>
 
             </LinearLayout>
 
@@ -59,7 +58,7 @@
                         android:layout_height="120dp"
                         android:onClick="dokter"/>
                     <ImageButton
-                        android:src="@drawable/about"
+                        android:src="@drawable/icontopup"
                         android:background="#ffffff"
                         android:layout_marginTop="50dp"
                         android:layout_width="120dp"
@@ -83,7 +82,7 @@
                         android:layout_height="120dp"
                         android:onClick="artikel"/>
                     <ImageButton
-                        android:src="@drawable/doctor"
+                        android:src="@drawable/about"
                         android:layout_marginTop="50dp"
                         android:background="#ffffff"
                         android:layout_width="120dp"

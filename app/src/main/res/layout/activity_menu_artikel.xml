@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.compaq.romansi.menu_artikel">
+<ImageSwitcher
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"></ImageSwitcher>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/kp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonkonsul2"
+            android:fontFamily="serif"
+            android:text="Artikel Psikolog"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:onClick="apsiko"/>
+
+        <Button
+            android:id="@+id/ks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/buttonkonsul1"
+            android:fontFamily="serif"
+            android:onClick="asekso"
+            android:text="Artikel Seksolog"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/kr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ks"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/buttonkonsul"
+            android:fontFamily="serif"
+            android:text="Artikel Realigi"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:onClick="areali"/>
+    </LinearLayout>
+</RelativeLayout>

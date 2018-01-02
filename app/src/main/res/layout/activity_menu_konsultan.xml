@@ -4,6 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context="com.example.compaq.romansi.menu_konsultan">
+    <ImageSwitcher
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroud"></ImageSwitcher>
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
